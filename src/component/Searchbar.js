@@ -16,9 +16,10 @@ export default SearchBar;
 
 const style = StyleSheet.create({
     containerInput: {
+        marginTop: 15,
         flexDirection: 'row',
         alignItems: 'center',
-        padding: 14,
+        paddingHorizontal: 10
     },
     input: {
         width: '100%',

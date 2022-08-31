@@ -10,8 +10,11 @@ import ContentSearch from '../component/ContentSearch';
 function SearchScreen({ navigation }) {
     return (
         <SafeAreaView>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <SearchBar />
+                <ContentSearch />
+                <ContentSearch />
+                <ContentSearch />
                 <ContentSearch />
                 <ContentSearch />
                 <ContentSearch />
