@@ -3,7 +3,7 @@ import { Text, View, Image, ScrollView, } from "react-native";
 
 function Story() {
     return (
-        <View style={{ marginVertical: 2, padding: 15, backgroundColor: 'white' }}>
+        <View style={{ marginVertical: 2, paddingVertical: 10, backgroundColor: 'white' }}>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 <View style={{ flexDirection: 'row' }}>
                     <View>
