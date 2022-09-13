@@ -26,7 +26,6 @@ function Navigation() {
         <NavigationContainer>
             <Tab.Navigator
                 screenOptions={({ route }) => ({
-
                     tabBarIcon: ({ focused, color, size }) => {
                         let iconName;
 
@@ -47,11 +46,31 @@ function Navigation() {
                     tabBarActiveTintColor: 'black',
                     tabBarInactiveTintColor: 'gray',
                 })}>
-                <Tab.Screen options={{ headerShown: false, tabBarShowLabel: false }} name="Home" component={HomeScreen} />
-                <Tab.Screen options={{ headerShown: false, tabBarShowLabel: false }} name="Search" component={SearchScreen} />
-                <Tab.Screen options={{ headerShown: false, tabBarShowLabel: false }} name="Video" component={VideoScreen} />
-                <Tab.Screen options={{ headerShown: false, tabBarShowLabel: false }} name="Shop" component={ShopScreen} />
-                <Tab.Screen options={{ headerShown: false, tabBarShowLabel: false }} name="Profile" component={ProfileScreen} />
+                <Tab.Screen
+                    options={{ headerShown: false, tabBarShowLabel: false }}
+                    name="Home"
+                    component={HomeScreen}
+                />
+                <Tab.Screen
+                    options={{ headerShown: false, tabBarShowLabel: false }}
+                    name="Search"
+                    component={SearchScreen}
+                />
+                <Tab.Screen
+                    options={{ headerShown: false, tabBarShowLabel: false }}
+                    name="Video"
+                    component={VideoScreen}
+                />
+                <Tab.Screen
+                    options={{ headerShown: false, tabBarShowLabel: false }}
+                    name="Shop"
+                    component={ShopScreen}
+                />
+                <Tab.Screen
+                    options={{ headerShown: false, tabBarShowLabel: false }}
+                    name="Profile"
+                    component={ProfileScreen}
+                />
             </Tab.Navigator>
         </NavigationContainer >
     );

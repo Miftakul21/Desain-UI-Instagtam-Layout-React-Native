@@ -13,6 +13,7 @@ function SearchBar() {
 }
 export default SearchBar;
 
+
 const style = StyleSheet.create({
     containerInput: {
         marginTop: 15,
@@ -29,6 +30,7 @@ const style = StyleSheet.create({
         borderRadius: 10,
         opacity: 0.5
     },
+
     icon: {
         position: 'absolute',
         zIndex: 1,

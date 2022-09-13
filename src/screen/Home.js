@@ -11,11 +11,35 @@ function HomeScreen({ navigation }) {
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header />
                 <Story />
-                <Content imgProfile={'https://picsum.photos/200/300?random=1'} nameUser={'Siti_AccountOfficial'} imgUpload={'https://picsum.photos/200/300?random=68'} />
-                <Content imgProfile={'https://picsum.photos/200/300?random=11'} nameUser={'hud.hudhud'} imgUpload={'https://picsum.photos/200/300?random=70'} />
-                <Content imgProfile={'https://picsum.photos/200/300?random=44'} nameUser={'DwiWoi_OfficialAccount'} imgUpload={'https://picsum.photos/200/300?random=90'} />
-                <Content imgProfile={'https://picsum.photos/200/300?random=28'} nameUser={'Siti_Jaitunah123'} imgUpload={'https://picsum.photos/200/300?random=40'} />
-                <Content imgProfile={'https://picsum.photos/200/300?random=45'} nameUser={'Bejo_54321'} imgUpload={'https://picsum.photos/200/300?random=60'} />
+                <Content
+                    imgProfile={'https://picsum.photos/200/300?random=1'}
+                    nameUser={'Siti_AccountOfficial'}
+                    imgUpload={'https://picsum.photos/200/300?random=68'}
+                />
+
+                <Content
+                    imgProfile={'https://picsum.photos/200/300?random=11'}
+                    nameUser={'hud.hudhud'}
+                    imgUpload={'https://picsum.photos/200/300?random=70'}
+                />
+
+                <Content
+                    imgProfile={'https://picsum.photos/200/300?random=44'}
+                    nameUser={'DwiWoi_OfficialAccount'}
+                    imgUpload={'https://picsum.photos/200/300?random=90'}
+                />
+
+                <Content
+                    imgProfile={'https://picsum.photos/200/300?random=28'}
+                    nameUser={'Siti_Jaitunah123'}
+                    imgUpload={'https://picsum.photos/200/300?random=40'}
+                />
+
+                <Content
+                    imgProfile={'https://picsum.photos/200/300?random=45'}
+                    nameUser={'Bejo_54321'}
+                    imgUpload={'https://picsum.photos/200/300?random=60'}
+                />
             </ScrollView >
         </SafeAreaView >
     );
