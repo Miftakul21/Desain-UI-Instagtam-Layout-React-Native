@@ -26,8 +26,8 @@ const style = StyleSheet.create({
         paddingHorizontal: 40,
         backgroundColor: '#cccccc',
         fontSize: 20,
+        color: '#000',
         borderRadius: 10,
-        opacity: 0.5
     },
     icon: {
         position: 'absolute',

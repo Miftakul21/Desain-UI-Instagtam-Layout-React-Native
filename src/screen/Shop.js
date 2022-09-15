@@ -9,7 +9,7 @@ import ContentShop from '../component/ContentShop';
 
 function ShopScreen({ navigation }) {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{ backgroundColor: 'white' }}>
             <ScrollView showVerticalIndicator={false}>
                 <HeaderShop />
                 <SearchBarShop />
@@ -17,7 +17,6 @@ function ShopScreen({ navigation }) {
                 <ContentShop />
                 <ContentShop />
                 <ContentShop />
-
             </ScrollView>
         </SafeAreaView >
     );

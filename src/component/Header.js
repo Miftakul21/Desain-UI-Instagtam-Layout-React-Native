@@ -1,14 +1,16 @@
 import React from "react";
 import { Text, View, Image, StyleSheet } from "react-native";
+import Icon from 'react-native-vector-icons/dist/FontAwesome5';
+import Icon2 from 'react-native-vector-icons/dist/Ionicons';
 
 function Header() {
     return (
         <View style={styles.container}>
             <Image source={require('../../assets/img/text-instagram.png')} style={styles.logo_img}></Image>
             <View style={styles.container_item}>
-                <Image source={require('../../assets/img/plus-icon.png')} style={styles.img_pinggir} />
-                <Image source={require('../../assets/img/heart-icon.png')} style={styles.img_tengah} />
-                <Image source={require('../../assets/img/send-icon.png')} style={styles.img_pinggir} />
+                <Icon name="plus-square" size={25} color="black" />
+                <Icon name="heart" size={25} color="black" />
+                <Icon2 name="chatbubble-outline" size={25} color="black" />
             </View>
         </View>
     );
@@ -26,21 +28,11 @@ const styles = StyleSheet.create({
         height: 30,
     },
     container_item: {
+        width: 100,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
     },
-    img_pinggir: {
-        width: 25,
-        height: 25,
-        marginHorizontal: 5
-    },
-    img_tengah: {
-        width: 30,
-        height: 30,
-        marginHorizontal: 5
-    }
-
 });
 
 export default Header;

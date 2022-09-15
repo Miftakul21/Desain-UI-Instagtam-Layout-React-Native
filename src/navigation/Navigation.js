@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -31,21 +31,28 @@ function Navigation() {
 
                         if (route.name === "Home") {
                             iconName = focused ? 'home' : 'home';
+                            return <Icon name={iconName} size={size} color={color} />
                         } else if (route.name === "Search") {
                             iconName = focused ? 'search' : 'search';
+                            return <Icon name={iconName} size={size} color={color} />
                         } else if (route.name === "Video") {
                             iconName = focused ? 'video' : 'video';
+                            return <Icon name={iconName} size={size} color={color} />
                         } else if (route.name === "Shop") {
                             iconName = focused ? 'shopping-bag' : 'shopping-bag';
+                            return <Icon name={iconName} size={size} color={color} />
                         } else if (route.name === "Profile") {
-                            iconName = focused ? 'user' : 'user';
+                            return <Image source={{ uri: 'https://picsum.photos/200/300?random=1' }} style={{ borderRadius: 50, width: 35, height: 35, marginHorizontal: 5 }} />
                         }
-
-                        return <Icon name={iconName} size={size} color={color} />;
                     },
                     tabBarActiveTintColor: 'black',
                     tabBarInactiveTintColor: 'gray',
                 })}>
+                <Tab.Screen
+                    options={{ headerShown: false, tabBarShowLabel: false }}
+                    name="Profile"
+                    component={ProfileScreen}
+                />
                 <Tab.Screen
                     options={{ headerShown: false, tabBarShowLabel: false }}
                     name="Home"
@@ -65,11 +72,6 @@ function Navigation() {
                     options={{ headerShown: false, tabBarShowLabel: false }}
                     name="Shop"
                     component={ShopScreen}
-                />
-                <Tab.Screen
-                    options={{ headerShown: false, tabBarShowLabel: false }}
-                    name="Profile"
-                    component={ProfileScreen}
                 />
             </Tab.Navigator>
         </NavigationContainer >

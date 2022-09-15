@@ -26,9 +26,10 @@ const style = StyleSheet.create({
         paddingLeft: 50,
         paddingHorizontal: 40,
         backgroundColor: '#cccccc',
+        color: '#000',
         fontSize: 20,
         borderRadius: 10,
-        opacity: 0.5
+        opacity: 0.9
     },
 
     icon: {

@@ -2,7 +2,6 @@ import React from "react";
 import { Text, View, Image, StyleSheet } from "react-native";
 
 function ContentShop() {
-
     const random = Math.floor(Math.random() * 1000);
     const image = 'https://picsum.photos/200/300?random=';
 
@@ -21,7 +20,7 @@ function ContentShop() {
                     <Image source={{ uri: image + random * 6 }} style={styles.img} />
                 </View>
                 <View style={styles.box}>
-                    <Image source={{ uri: image + random * 10 }} style={styles.img} />
+                    <Image source={{ uri: image + random * 12 }} style={styles.img} />
                 </View>
             </View>
         </View>
@@ -31,7 +30,7 @@ function ContentShop() {
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'column'
+        flexDirection: 'column',
     },
     BoxItem: {
         flexDirection: 'row',
@@ -41,12 +40,10 @@ const styles = StyleSheet.create({
     box: {
         width: 215,
         height: 200,
-        backgroundColor: 'tomato',
         resizeMode: 'cover'
     },
     img: {
-        width: 215,
-        height: 200
+        flex: 1
     }
 })
 
